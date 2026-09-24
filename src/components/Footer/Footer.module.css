@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+.footer{
+	width: 100%;
+	background: #436A58;
+	padding: 76px 3.3% 40px 3.3%;
+}
+.footer-grid{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 44px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.footer-about{
+	flex: 1.6 1 0;
+	min-width: 0;
+}
+.footer-col{
+	flex: 1 1 0;
+	min-width: 0;
+}
+.footer-brand{
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: 2.6vh;
+	font-weight: 700;
+	color: #fff;
+}
+.footer-brand:hover{
+	color: #fff;
+}
+.brand-dot{
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #E8A93D;
+}
+.footer-note{
+	font-size: 15px;
+	line-height: 1.7;
+	color: rgba(255,255,255,.85);
+	margin-top: 20px;
+	max-width: 340px;
+}
+.footer-col h3{
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	color: rgba(255,255,255,.8);
+	margin-bottom: 18px;
+}
+.footer-col a{
+	display: block;
+	font-size: 15px;
+	color: #fff;
+	margin-bottom: 13px;
+	font-weight: 400;
+}
+.footer-col a:hover{
+	color: #E8A93D;
+}
+.footer-bottom{
+	max-width: 1200px;
+	margin: 56px auto 0 auto;
+	padding-top: 22px;
+	border-top: 1px solid rgba(255,255,255,.22);
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+	font-size: 12px;
+	letter-spacing: .12em;
+	text-transform: uppercase;
+	color: rgba(255,255,255,.78);
+}
+@media screen and (max-width: 1040px) {
+	.footer-about, .footer-col{
+		flex: 0 1 calc(50% - 22px);
+	}
+}
+@media screen and (max-width: 640px) {
+	.footer-about, .footer-col{
+		flex-basis: 100%;
+	}
+	.footer{
+		padding: 56px 5% 40px 5%;
+	}
+}
+.footer-small{
+	font-size: 15px;
+	color: #fff;
+}
