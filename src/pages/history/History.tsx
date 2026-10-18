@@ -6,6 +6,7 @@ import { ACCENT } from '../../data'
 import { LANG } from '../../lang/lang'
 import PageHead from '../../components/PageHead/PageHead.tsx'
 import Footer from '../../components/Footer/Footer.tsx'
+import { NavLink } from 'react-router-dom'
 
 function History() {
 	const [theme, setTheme] = useState<string>(ACCENT);
@@ -28,6 +29,7 @@ function History() {
                             <p className={cn(styles['era-year'])}>{era.year}</p>
                             <h3 className={cn(styles['era-title'])}>{era.title}</h3>
                             <p className={cn(styles['text'])}>{era.text}</p>
+                            <NavLink to={era.link} className={cn(styles['era-link'])}>Подробнее</NavLink>
                         </div>
                     ))}
                 </div>

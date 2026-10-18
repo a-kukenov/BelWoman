@@ -6,7 +6,7 @@ import { ACCENT } from '../../data'
 import { LANG } from '../../lang/lang'
 import PageHead from '../../components/PageHead/PageHead.tsx'
 import Footer from '../../components/Footer/Footer.tsx'
-import { PORTRAITS, OTHER_SOURCES } from '../../data'
+import { PORTRAITS, OTHER_SOURCES, SCHOOLS } from '../../data'
 
 function Sources() {
 	const [theme, setTheme] = useState<string>(ACCENT);
@@ -27,6 +27,12 @@ function Sources() {
                     <h3>{t.sources.bios}</h3>
                     {PORTRAITS.map((p: any) => (
                         <a className={cn(styles['src'])} href={p.source} target="_blank" key={p.id}>{t.people[p.id].name}<span>{p.source}</span></a>
+                    ))}
+                </div>
+                <div className={cn(styles['src-group'])}>
+                    <h3>{t.sources.schools}</h3>
+                    {SCHOOLS.map((p: any) => (
+                        <a className={cn(styles['src'])} href={p.source} target="_blank" key={p.id}>{t.places[p.id].name}<span>{p.source}</span></a>
                     ))}
                 </div>
                 <div className={cn(styles['src-group'])}>

@@ -125,9 +125,8 @@ function MainLayout() {
 						<NavLink to={'/home'} className={cn(styles['link'], chosenLink == 1 ? styles['chosen-link']  : '')} onClick={() => {chooseLink(1)}}>{t.nav[0]}</NavLink>
 						<NavLink to={'/history'} className={cn(styles['link'], chosenLink == 2 ? styles['chosen-link'] : '')} onClick={() => {chooseLink(2)}}>{t.nav[1]}</NavLink>
 						<NavLink to={'/portraits'} className={cn(styles['link'], chosenLink == 3 ? styles['chosen-link'] : '')} onClick={() => {chooseLink(3)}}>{t.nav[2]}</NavLink>
-						<NavLink to={'/war'} className={cn(styles['link'], chosenLink == 4 ? styles['chosen-link'] : '')} onClick={() => {chooseLink(4)}}>{t.nav[3]}</NavLink>
-						<NavLink to={'/today'} className={cn(styles['link'], chosenLink == 5 ? styles['chosen-link'] : '')} onClick={() => {chooseLink(5)}}>{t.nav[4]}</NavLink>
-						<NavLink to={'/sources'} className={cn(styles['link'], chosenLink == 6 ? styles['chosen-link'] : '')} onClick={() => {chooseLink(6)}}>{t.nav[5]}</NavLink>
+						<NavLink to={'/schools'} className={cn(styles['link'], chosenLink == 4 ? styles['chosen-link'] : '')} onClick={() => {chooseLink(4)}}>{t.nav[3]}</NavLink>
+						<NavLink to={'/sources'} className={cn(styles['link'], chosenLink == 5 ? styles['chosen-link'] : '')} onClick={() => {chooseLink(5)}}>{t.nav[4]}</NavLink>
 						<NavLink to={'/quiz'} className={cn(styles['quiz-button'])} onClick={() => {chooseLink(7)}} style={{background: `${theme}`}}>{t.quizBtn}</NavLink>
 
 						<NavLink to={'/home'} className={cn(styles['link-mobile'])} onClick={() => {chooseLink(1)}} style={chosenLink == 1 ? {color: `${theme}`, fontSize: '3.2vh'} : {fontSize: '3.2vh'}}><FaHouse> </FaHouse></NavLink>
@@ -139,8 +138,8 @@ function MainLayout() {
 						<div className={cn(styles['chosen-string'])} style={{left:`${chosenStringLeftValue}%`}}></div>
 					</section>
 					<div className={cn(styles['lang'])}>
-						<button className={cn(styles['lang-btn'], lang == 'ru' ? styles['lang-act'] : '')} onClick={() => {setLang('ru')}} style={lang == 'ru' ? {background: `${theme}`} : {}}>RU</button>
-						<button className={cn(styles['lang-btn'], lang == 'be' ? styles['lang-act'] : '')} onClick={() => {setLang('be')}} style={lang == 'be' ? {background: `${theme}`} : {}}>BE</button>
+						<button className={cn(styles['lang-btn'], lang == 'ru' ? styles['lang-act'] : '')} onClick={() => {setLang('ru')}} style={lang == 'ru' ? {background: `${theme}`} : {}}>RUS</button>
+						<button className={cn(styles['lang-btn'], lang == 'be' ? styles['lang-act'] : '')} onClick={() => {setLang('be')}} style={lang == 'be' ? {background: `${theme}`} : {}}>BEL</button>
 					</div>
 				</header>
 				<header className={cn(styles['header-mobile'])}>

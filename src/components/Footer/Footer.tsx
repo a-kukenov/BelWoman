@@ -19,8 +19,7 @@ function Footer(props: any) {
                     <h3>{t.footer.sections}</h3>
                     <NavLink to={'/history'}>{t.footer.links[0]}</NavLink>
                     <NavLink to={'/portraits'}>{t.footer.links[1]}</NavLink>
-                    <NavLink to={'/war'}>{t.footer.links[2]}</NavLink>
-                    <NavLink to={'/today'}>{t.footer.links[3]}</NavLink>
+                    <NavLink to={'/schools'}>{t.footer.links[2]}</NavLink>
                 </div>
                 <div className={cn(styles['footer-col'])}>
                     <h3>{t.footer.interactive}</h3>
