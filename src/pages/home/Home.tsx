@@ -107,7 +107,6 @@ function Home() {
                             ))}
                         </div>
                         <a className={cn(styles['btn-outline'])} href="https://www.thevoicemag.ru/social/stories/operaciya-deti-kak-uchitelnica-matryona-volskaya-spasla-ot-fashistov-3225-detey/" target="_blank">{t.storyRead}</a>
-                        <p className={cn(styles['credit'])}>{t.storyCredit}</p>
                     </div>
                     <div className={cn(styles['story-media'])}>
                         <img className={cn(styles['story-cover'])} src="https://images.thevoicemag.ru/upload/img_cache/3e3/3e30b5a1ef2785274f8d1b982bc64e17_ce_1579x829x0x117_cropped_1200x628.jpg" alt={t.storyAlt} />
@@ -116,7 +115,6 @@ function Home() {
                                 <img src={photo} key={index} alt="" />
                             ))}
                         </div>
-                        <p className={cn(styles['credit'])}>{t.photoCredit}</p>
                     </div>
                 </div>
             </section>

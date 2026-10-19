@@ -29,6 +29,7 @@ header{
 	font-size: 2.6vh;
 	font-weight: 700;
 	color: #1D2626;
+	
 }
 .brand:hover{
 	color: #1D2626;
@@ -153,6 +154,9 @@ a:hover{
 	.brand{
 		font-size: 2.2vh;
 	}
+	.brand-dot{
+		display: none;
+	}
   }
 @media screen and (max-width: 860px) {
 	.links{
@@ -169,6 +173,9 @@ a:hover{
 	}
 	.chosen-string{
 		display: none;
+	}
+	.brand{
+		width: min-content;
 	}
   }
   @media screen and (max-width: 500px) {
